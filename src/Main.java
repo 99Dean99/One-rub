@@ -1,15 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+        OneRub service = new OneRub();
         int initialData = 100;
         int replenishmentAmount = 1100;
-        int total;
-        if {
-            (replenishmentAmount >= 1000)
-            total = (int) ((replenishmentAmount * 0.01) + replenishmentAmount + initialData);
-        }
-        else { 
-            total = (replenishmentAmount + initialData);
-        }
+        int total = service.calculate(replenishmentAmount, initialData);
         System.out.println(total);
     }
 }
